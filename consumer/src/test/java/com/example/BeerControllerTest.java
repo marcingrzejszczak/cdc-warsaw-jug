@@ -1,4 +1,4 @@
-package docs;
+package com.example;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,8 +23,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest(webEnvironment = WebEnvironment.MOCK)
 @AutoConfigureMockMvc
 @AutoConfigureJsonTesters
-@AutoConfigureStubRunner(workOffline = true, ids = "com.example:beer-api-producer-external:+:stubs:8095")
-public class ExternalBeerControllerTest extends AbstractTest {
+@AutoConfigureStubRunner(workOffline = true, ids = "com.example:beer-api-producer:+:stubs:8090")
+public class BeerControllerTest extends AbstractTest {
 
 	@Autowired  MockMvc mockMvc;
 

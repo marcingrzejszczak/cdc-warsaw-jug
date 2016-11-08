@@ -1,9 +1,8 @@
-package docs;
-
-import org.junit.Before;
-import org.springframework.boot.test.json.JacksonTester;
+package com.example;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.junit.Before;
+import org.springframework.boot.test.json.JacksonTester;
 
 /**
  * @author Marcin Grzejszczak

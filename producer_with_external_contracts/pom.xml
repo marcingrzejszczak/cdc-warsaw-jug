@@ -22,8 +22,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<spring-cloud.version>Camden.SR2</spring-cloud.version>
-		<spring-cloud-contract.version>1.0.1.RELEASE</spring-cloud-contract.version>
+		<spring-cloud.version>Camden.BUILD-SNAPSHOT</spring-cloud.version>
+		<spring-cloud-contract.version>1.0.2.BUILD-SNAPSHOT</spring-cloud-contract.version>
 	</properties>
 
 	<dependencies>
@@ -91,7 +91,7 @@
 						<artifactId>beer-contracts</artifactId>
 					</contractDependency>
 					<!-- Can't turn this on cause NPE will be thrown ;) -->
-					<!--<contractsWorkOffline>true</contractsWorkOffline>-->
+					<contractsWorkOffline>true</contractsWorkOffline>
 				</configuration>
 				<!-- this was added for testing purposes only -->
 				<dependencies>
