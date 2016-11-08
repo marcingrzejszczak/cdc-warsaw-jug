@@ -8,12 +8,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ProducerController {
 
+	private final PersonCheckingService personCheckingService;
+
+	public ProducerController(PersonCheckingService personCheckingService) {
+		this.personCheckingService = personCheckingService;
+	}
+
 	@RequestMapping(value = "/check",
 			method=RequestMethod.POST,
 			consumes="application/json",
 			produces="application/json")
 	public Response check(@RequestBody PersonToCheck personToCheck) {
-		if (personToCheck.age >= 20) {
+		if (personCheckingService.shouldGetBeer(personToCheck)) {
 			return new Response(BeerCheckStatus.OK);
 		}
 		return new Response(BeerCheckStatus.NOT_OK);
@@ -21,8 +27,19 @@ public class ProducerController {
 	
 }
 
+interface PersonCheckingService {
+	boolean shouldGetBeer(PersonToCheck personToCheck);
+}
+
 class PersonToCheck {
 	public int age;
+
+	public PersonToCheck(int age) {
+		this.age = age;
+	}
+
+	public PersonToCheck() {
+	}
 }
 
 class Response {
