@@ -16,8 +16,8 @@
 	</properties>
 
     <modules>
-        <module>consumer</module>
-        <module>producer</module>
+		<module>producer</module>
+		<module>consumer</module>
     </modules>
 
  	<build>
