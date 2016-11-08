@@ -13,7 +13,7 @@ import static org.mockito.BDDMockito.given;
 import static org.mockito.Matchers.argThat;
 
 @RunWith(MockitoJUnitRunner.class)
-public class BeerRestBase {
+public abstract class BeerRestBase {
 
 	@Mock PersonCheckingService personCheckingService;
 	@InjectMocks ProducerController producerController;

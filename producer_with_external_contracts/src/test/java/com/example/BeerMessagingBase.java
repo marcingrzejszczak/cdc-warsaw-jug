@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = ProducerApplication.class, webEnvironment = SpringBootTest.WebEnvironment.NONE)
 @AutoConfigureMessageVerifier
-public class BeerMessagingBase {
+public abstract class BeerMessagingBase {
 
 	@Inject MessageVerifier messaging;
 	@Autowired PersonCheckingService personCheckingService;

@@ -1,8 +1,5 @@
 package com.example;
 
-import com.example.PersonCheckingService;
-import com.example.PersonToCheck;
-import com.example.ProducerApplication;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = ProducerApplication.class, webEnvironment = SpringBootTest.WebEnvironment.NONE)
 @AutoConfigureMessageVerifier
-public class BeerMessagingBase {
+public abstract class BeerMessagingBase {
 
 	@Inject MessageVerifier messaging;
 	@Autowired PersonCheckingService personCheckingService;
