@@ -1,4 +1,4 @@
-package com.example;
+package docs;
 
 import org.junit.Before;
 import org.springframework.boot.test.json.JacksonTester;
@@ -8,9 +8,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 /**
  * @author Marcin Grzejszczak
  */
-abstract class AbstractTest {
+public abstract class AbstractTest {
 
-	JacksonTester<Person> json;
+	public JacksonTester<Person> json;
 
 	@Before
 	public void setup() {

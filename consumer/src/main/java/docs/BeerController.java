@@ -1,4 +1,4 @@
-package com.example;
+package docs;
 
 import org.springframework.http.MediaType;
 import org.springframework.http.RequestEntity;

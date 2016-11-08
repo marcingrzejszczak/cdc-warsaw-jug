@@ -11,12 +11,10 @@
     <name>Warsaw JUG CDC code</name>
     <description>Warsaw JUG CDC code</description>
 
-	<properties>
-		<main.basedir>${basedir}/..</main.basedir>
-	</properties>
-
     <modules>
+		<module>beer-contracts</module>
 		<module>producer</module>
+		<module>producer_with_external_contracts</module>
 		<module>consumer</module>
     </modules>
 

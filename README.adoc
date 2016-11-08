@@ -1,0 +1,19 @@
+= CDC Warsaw JUG code
+
+This repository contains code for the Warsaw JUG meeting. It contains
+the consumer and the producer applications to use with Spring Cloud Contract
+project.
+
+== Beer-contracts
+
+Contains the repo with
+
+== Producer
+
+The producer application contains contracts for both REST and messaging
+communication. From these contracts tests and stubs will be generated.
+
+== Consumer
+
+The consumer application is using the stubs of the producer for both
+rest and messaging.
