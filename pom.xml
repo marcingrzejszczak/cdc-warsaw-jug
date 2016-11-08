@@ -6,6 +6,7 @@
     <groupId>com.toomuchcoding</groupId>
     <artifactId>cdc-warsaw-jug</artifactId>
     <packaging>pom</packaging>
+	<version>0.0.1-BUILD-SNAPSHOT</version>
 
     <name>Warsaw JUG CDC code</name>
     <description>Warsaw JUG CDC code</description>
