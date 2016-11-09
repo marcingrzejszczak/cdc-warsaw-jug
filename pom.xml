@@ -12,11 +12,13 @@
     <description>Warsaw JUG CDC code</description>
 
     <modules>
-		<module>beer-contracts</module>
+		<module>beer_contracts</module>
 		<module>producer</module>
 		<module>producer_with_external_contracts</module>
+		<module>producer_with_restdocs</module>
 		<module>consumer</module>
-    </modules>
+		<module>consumer_with_restdocs</module>
+	</modules>
 
  	<build>
 		<plugins>
