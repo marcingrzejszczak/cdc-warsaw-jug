@@ -1,8 +1,14 @@
-= CDC Warsaw JUG code
+= Spring Cloud Contract samples
 
-This repository contains code for the Warsaw JUG meeting. It contains
-the consumer and the producer applications to use with Spring Cloud Contract
-project.
+This repository contains the consumer and the producer applications to use with Spring Cloud Contract
+project. It shows examples of
+
+- storing contracts on the producer side
+- storing contracts in a common repo
+- passing stubs via Rest docs
+
+Both for REST and Messaging. Built with Maven and Gradle.
+Also some additional Spring Cloud Contract plugin configuration is present.
 
 == Projects
 
@@ -59,4 +65,13 @@ You can also go to each of the projects and run Gradle wrapper:
 [source,bash]
 ----
 ./gradlew clean build publishToMavenLocal
+----
+
+== How to test it?
+
+You can run the script
+
+[source,bash]
+----
+./scripts/runAcceptanceTests.sh
 ----
